@@ -1,0 +1,250 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(38, 4, 67, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 2px solid slategrey;
+}
+
+.FJA-C{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header{
+  height: 10vh;
+  width: 100vw;
+  background-color: #F9F5F6;
+  justify-content: center;
+}
+header nav{
+  width: 90%;
+  justify-content: space-between;
+}
+
+header nav ul{
+  width: 75%;
+  margin: auto;
+  /* padding: 0 1.8rem; */
+  
+ /* justify-content: space-evenly; */
+}
+
+nav ul li{
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0 .8rem;
+  padding:0.6rem 1.4rem;
+  list-style: none;
+  transition: 0.8s all;
+  cursor: pointer;
+}
+
+
+nav ul li:hover{
+  color: lightskyblue;
+}
+
+.hamburger-icon{
+  display: none;
+}
+.bar{
+  display: block;
+  width: 2rem;
+  height: 0.12rem;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.sect-1{
+  min-height:80vh;
+  background: url("/asserts/img1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.hero_card{
+  font-size: 1rem;
+  position: relative;
+  top: 8rem;
+  left: 10%;
+  color: azure;
+  font-weight: 500;
+  z-index: 3;
+  padding: 4rem;
+  width: 40vw;
+  background: #e45454b1;
+}
+.hero_card p{
+  margin-top: 0.6rem;
+}
+
+.sect-2{
+  min-height: 100vh;
+  background-color: #d674d8;
+  background-image: linear-gradient(43deg, #d674d8 28%, #FFCC70 61%, #e4e95a 99%);
+
+}
+
+.sect-2_div{
+  padding:4rem 0; 
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.banner_Tag{
+  margin: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 800;
+  color: azure;
+}
+
+.cards{
+  width: 17rem;
+  height: 22rem;
+  background-color: ghostwhite;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-top-right-radius: 2.4rem;
+  border-bottom-left-radius: 2.4rem;
+}
+
+.cards p{
+  padding: .6rem;
+  text-align: center;
+}
+
+img{
+  width: 90%;
+  height: 60%;
+  object-fit: cover;
+  border-top-right-radius: 2rem;
+  /* border-bottom-left-radius: 2rem; */
+}
+
+.cards h3{
+  text-transform: uppercase;
+}
+
+.card_Tag{
+  width: 100vw;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+.btn_Tag{
+  margin: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_Tag button{
+  padding: 0.8rem 3rem;
+  background-color: #f5f1f139;
+  border-style: none;
+  font-size: large;
+  font-weight: 700;
+  color: #242020;
+  border-radius: 3rem;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transition: 0.2s all;
+  cursor: pointer;
+}
+
+.btn_Tag button:active{
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  .hero_card{
+    padding: 2.5rem;
+  }
+  .card_Tag {
+    flex-wrap: wrap;
+  }
+
+  .cards{
+    margin: 2rem;
+  }
+ 
+}
+
+/* @media only screen and (max-width: 768px){
+  .hamburger-icon{
+    display: block;
+  }
+  .hamburger-icon.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger-icon.active .bar:nth-child(1){
+    transform: translateY(0.6rem) rotate(45deg);
+  }
+  .hamburger-icon.active .bar:nth-child(1){
+    transform: translateY(-0.6rem) rotate(-45deg);
+  }
+  .nav_menu.active{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #cecece;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  nav_menu li{
+    margin: 1rem 0;
+  }
+} */
+
+@media only screen and (max-width: 600px) {
+
+  .hero_card{
+    font-size: 0.9rem;
+    padding: 1.5rem;
+  }
+
+  .card_Tag {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+  }
+  .cards{
+    margin: 1.5rem 0;
+  }
+  
+}
+
+
+
+
